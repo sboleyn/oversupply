@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS bamazon;
+DROP DATABASE IF EXISTS oversupply;
 
-CREATE DATABASE bamazon;
+CREATE DATABASE oversupply;
 
-USE bamazon;
+USE oversupply;
 
 DROP TABLE IF EXISTS products; 
 
