@@ -41,7 +41,7 @@ var startPurchase = function () {
                 default: 1
             }
         ]).then(answers => {
-            console.log(answers);
+            // console.log(answers);
 
             // 3. Check if store has enough product
             // ---No? say "Insufficient quantity!" and prevent order
@@ -50,12 +50,12 @@ var startPurchase = function () {
             var numUnits = answers.units;
 
             connection.query('SELECT stock_quantity FROM products WHERE item_id = ' + chosen, function (error, results, fields) {
-                console.log(results[0] == undefined);
+                // console.log(results[0] == undefined);
                 if (error) throw error;
 
                 if (!(results[0] == undefined)) {
                     var inStock = results[0].stock_quantity;
-                    console.log(inStock);
+                    // console.log(inStock);
 
                     if (numUnits > inStock) {
                         console.log("Insufficient quantity!");
