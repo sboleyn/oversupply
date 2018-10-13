@@ -1,5 +1,8 @@
 # Oversupply
 
+<!-- ![Oversupply in action](/images/logo.png)
+Format: ![Alt Text](url) -->
+
 ## Overview
 This is an Amazon-like store front CLI app. I titled the repo oversupply as it resonated better to me than Bamazon. This app dispalys all items available for sale, asks the user to select the item and number of units they'd like to purchase, checks if the store has enough of the product, and then decides what to do next. If the purchase is successful, the customer is notified of the total price and the program closes. If the purchase is not successful because their isn't enough product to fill the order, the customer is notified and the shop reloads. If the purchase is not successful because the item selected by the customer does not exist in the shop, the customer is notified and the shop reloads.
 
